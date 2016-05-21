@@ -19,3 +19,9 @@ Derek Molloy's GPIO library is used and included in the compile script
 The ncurses library is also used.
 --run--
 sudo ./etchv2.o
+
+==========
+Comments from Prof. Yoder
+I'm having trouble making it work.  Please demo in class.
+
+Grade:  2/10  (so far)
