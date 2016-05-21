@@ -1,0 +1,40 @@
+#! /bin/bash
+#description
+#set the thermostat mode of the tmp101 sensor and wait for the high limit
+#to be reached
+#parameters
+tmpaddress=$1 #input as a hex value i.e: 0x48 or 0x40
+lowlim=$2 #input as a hex value
+highlim=$3 #input as a hex value
+#
+#code body
+rawtemp1=$(i2cget -y 2 tmpaddress 0x00)
+rawtemp2=$(i2cget -y 2 tmpaddress 0x00)
+rawtemp1dec=$((rawtemp1)) 
+rawtemp2dec=$((rawtemp2)) 
+temp1F=$(echo $rawtemp1dec*1.8 | bc)
+temp1F=$(echo $temp1F + 32 | bc)
+temp2F=$(echo $rawtemp2dec*1.8 | bc)
+temp2F=$(echo $temp2F + 32 | bc)
+
+i2cset -y 2 tmpaddress 0x01 0x02
+sleep 0.1
+i2cset -y 2 0x48 0x02 lowlim b
+sleep 0.1
+i2cset -y 2 0x48 0x03 highlim b
+while true; do
+    #wait for interrupt from the alarm pin
+    GPIOvar=$(cat /sys/class/gpio/gpio66/value)
+    if (("$GPIOvar" == "0")); then
+        rawtemp3=$(i2cget -y 2 0x48 0x00)
+        break
+    fi
+    sleep 0.5
+done
+rawtemp3dec=$((rawtemp3))
+temp3F=$(echo $rawtemp3dec*1.8 | bc)
+temp3F=$(echo $temp3F + 32 | bc) 
+#echo $rawtemp3
+#echo $rawtemp2
+echo $temp3F
+#echo $temp2F
