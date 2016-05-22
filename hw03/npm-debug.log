@@ -1,0 +1,994 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'i2c' ]
+2 info using npm@3.8.2
+3 info using node@v0.12.15
+4 verbose node symlink /usr/bin/node
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData i2c
+9 silly fetchNamedPackageData i2c
+10 silly mapToRegistry name i2c
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/i2c
+14 verbose request uri https://registry.npmjs.org/i2c
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 7:00:27 PM
+17 verbose request id c139b98310306f2e
+18 http request GET https://registry.npmjs.org/i2c
+19 http 200 https://registry.npmjs.org/i2c
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"9EBANGB3XYJZJEFFZCQTITRY6"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '3477',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Tue, 13 Sep 2016 19:00:28 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '263',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-ord1730-ORD',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1473793228.089505,VS0,VE0',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"9EBANGB3XYJZJEFFZCQTITRY6"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '3477',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Tue, 13 Sep 2016 19:00:28 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '263',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-ord1730-ORD',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1473793228.089505,VS0,VE0',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving i2c to /root/.npm/registry.npmjs.org/i2c/.cache.json
+23 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule i2c@0.2.3 checking installable status
+37 silly cache add args [ 'i2c', null ]
+38 verbose cache add spec i2c
+39 silly cache add parsed spec { raw: 'i2c',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'i2c',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed i2c@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for i2c
+42 info addNameTag [ 'i2c', 'latest' ]
+43 silly mapToRegistry name i2c
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/i2c
+47 verbose addNameTag registry:https://registry.npmjs.org/i2c not in flight; fetching
+48 verbose get https://registry.npmjs.org/i2c not expired, no request
+49 silly addNameTag next cb for i2c with tag latest
+50 silly addNamed i2c@0.2.3
+51 verbose addNamed "0.2.3" is a plain semver version for i2c
+52 silly mapToRegistry name i2c
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/i2c
+56 verbose addRemoteTarball https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz',
+57 verbose addRemoteTarball   'f43f7028141026ae48af2990a374633d1dab3d2b' ]
+58 info retry fetch attempt 1 at 7:00:31 PM
+59 info attempt registry request try #1 at 7:00:32 PM
+60 http fetch GET https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz
+61 http fetch 200 https://registry.npmjs.org/i2c/-/i2c-0.2.3.tgz
+62 silly fetchAndShaCheck shasum f43f7028141026ae48af2990a374633d1dab3d2b
+63 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/i2c/-/i2c-0.2.3.tgz not in flight; adding
+64 verbose addTmpTarball already have metadata; skipping unpack for i2c@0.2.3
+65 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+66 silly cache afterAdd i2c@0.2.3
+67 verbose afterAdd /root/.npm/i2c/0.2.3/package/package.json not in flight; writing
+68 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+69 verbose afterAdd /root/.npm/i2c/0.2.3/package/package.json written
+70 silly fetchNamedPackageData bindings
+71 silly mapToRegistry name bindings
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/bindings
+75 silly fetchNamedPackageData underscore
+76 silly mapToRegistry name underscore
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry uri https://registry.npmjs.org/underscore
+80 silly fetchNamedPackageData coffee-script
+81 silly mapToRegistry name coffee-script
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+85 silly fetchNamedPackageData repl
+86 silly mapToRegistry name repl
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry uri https://registry.npmjs.org/repl
+90 silly fetchNamedPackageData nan
+91 silly mapToRegistry name nan
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/nan
+95 verbose request uri https://registry.npmjs.org/bindings
+96 verbose request no auth needed
+97 info attempt registry request try #1 at 7:00:33 PM
+98 http request GET https://registry.npmjs.org/bindings
+99 verbose request uri https://registry.npmjs.org/underscore
+100 verbose request no auth needed
+101 info attempt registry request try #1 at 7:00:33 PM
+102 http request GET https://registry.npmjs.org/underscore
+103 verbose request uri https://registry.npmjs.org/coffee-script
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 7:00:33 PM
+106 http request GET https://registry.npmjs.org/coffee-script
+107 verbose request uri https://registry.npmjs.org/repl
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 7:00:33 PM
+110 http request GET https://registry.npmjs.org/repl
+111 verbose request uri https://registry.npmjs.org/nan
+112 verbose request no auth needed
+113 info attempt registry request try #1 at 7:00:33 PM
+114 verbose etag "NAY6YRKIZAXUCU18M1YHIEA2"
+115 http request GET https://registry.npmjs.org/nan
+116 http 200 https://registry.npmjs.org/repl
+117 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+117 verbose headers   etag: '"B2YIZ9SHIPM70CR4ZZI8WJ13O"',
+117 verbose headers   'content-type': 'application/json',
+117 verbose headers   'content-encoding': 'gzip',
+117 verbose headers   'cache-control': 'max-age=300',
+117 verbose headers   'content-length': '897',
+117 verbose headers   'accept-ranges': 'bytes',
+117 verbose headers   date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+117 verbose headers   via: '1.1 varnish',
+117 verbose headers   age: '266',
+117 verbose headers   connection: 'keep-alive',
+117 verbose headers   'x-served-by': 'cache-ord1731-ORD',
+117 verbose headers   'x-cache': 'HIT',
+117 verbose headers   'x-cache-hits': '1',
+117 verbose headers   'x-timer': 'S1473793234.127352,VS0,VE0',
+117 verbose headers   vary: 'Accept-Encoding' }
+118 silly get cb [ 200,
+118 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+118 silly get     etag: '"B2YIZ9SHIPM70CR4ZZI8WJ13O"',
+118 silly get     'content-type': 'application/json',
+118 silly get     'content-encoding': 'gzip',
+118 silly get     'cache-control': 'max-age=300',
+118 silly get     'content-length': '897',
+118 silly get     'accept-ranges': 'bytes',
+118 silly get     date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     age: '266',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-ord1731-ORD',
+118 silly get     'x-cache': 'HIT',
+118 silly get     'x-cache-hits': '1',
+118 silly get     'x-timer': 'S1473793234.127352,VS0,VE0',
+118 silly get     vary: 'Accept-Encoding' } ]
+119 verbose get saving repl to /root/.npm/registry.npmjs.org/repl/.cache.json
+120 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+121 http 200 https://registry.npmjs.org/bindings
+122 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+122 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+122 verbose headers   'content-type': 'application/json',
+122 verbose headers   'content-encoding': 'gzip',
+122 verbose headers   'cache-control': 'max-age=300',
+122 verbose headers   'content-length': '3804',
+122 verbose headers   'accept-ranges': 'bytes',
+122 verbose headers   date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+122 verbose headers   via: '1.1 varnish',
+122 verbose headers   age: '4',
+122 verbose headers   connection: 'keep-alive',
+122 verbose headers   'x-served-by': 'cache-ord1724-ORD',
+122 verbose headers   'x-cache': 'HIT',
+122 verbose headers   'x-cache-hits': '1',
+122 verbose headers   'x-timer': 'S1473793234.137456,VS0,VE0',
+122 verbose headers   vary: 'Accept-Encoding' }
+123 silly get cb [ 200,
+123 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+123 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+123 silly get     'content-type': 'application/json',
+123 silly get     'content-encoding': 'gzip',
+123 silly get     'cache-control': 'max-age=300',
+123 silly get     'content-length': '3804',
+123 silly get     'accept-ranges': 'bytes',
+123 silly get     date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+123 silly get     via: '1.1 varnish',
+123 silly get     age: '4',
+123 silly get     connection: 'keep-alive',
+123 silly get     'x-served-by': 'cache-ord1724-ORD',
+123 silly get     'x-cache': 'HIT',
+123 silly get     'x-cache-hits': '1',
+123 silly get     'x-timer': 'S1473793234.137456,VS0,VE0',
+123 silly get     vary: 'Accept-Encoding' } ]
+124 verbose get saving bindings to /root/.npm/registry.npmjs.org/bindings/.cache.json
+125 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+126 http 200 https://registry.npmjs.org/coffee-script
+127 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+127 verbose headers   etag: '"3CNHVRP8F4DTLLZZ57QXBPP0D"',
+127 verbose headers   'content-type': 'application/json',
+127 verbose headers   'content-encoding': 'gzip',
+127 verbose headers   'cache-control': 'max-age=300',
+127 verbose headers   'content-length': '7380',
+127 verbose headers   'accept-ranges': 'bytes',
+127 verbose headers   date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+127 verbose headers   via: '1.1 varnish',
+127 verbose headers   age: '132',
+127 verbose headers   connection: 'keep-alive',
+127 verbose headers   'x-served-by': 'cache-ord1720-ORD',
+127 verbose headers   'x-cache': 'HIT',
+127 verbose headers   'x-cache-hits': '3',
+127 verbose headers   'x-timer': 'S1473793234.119743,VS0,VE0',
+127 verbose headers   vary: 'Accept-Encoding' }
+128 silly get cb [ 200,
+128 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+128 silly get     etag: '"3CNHVRP8F4DTLLZZ57QXBPP0D"',
+128 silly get     'content-type': 'application/json',
+128 silly get     'content-encoding': 'gzip',
+128 silly get     'cache-control': 'max-age=300',
+128 silly get     'content-length': '7380',
+128 silly get     'accept-ranges': 'bytes',
+128 silly get     date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+128 silly get     via: '1.1 varnish',
+128 silly get     age: '132',
+128 silly get     connection: 'keep-alive',
+128 silly get     'x-served-by': 'cache-ord1720-ORD',
+128 silly get     'x-cache': 'HIT',
+128 silly get     'x-cache-hits': '3',
+128 silly get     'x-timer': 'S1473793234.119743,VS0,VE0',
+128 silly get     vary: 'Accept-Encoding' } ]
+129 verbose get saving coffee-script to /root/.npm/registry.npmjs.org/coffee-script/.cache.json
+130 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+131 http 200 https://registry.npmjs.org/underscore
+132 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+132 verbose headers   etag: '"EXSGC9XN4BY9ZERJQY6818XUF"',
+132 verbose headers   'content-type': 'application/json',
+132 verbose headers   'content-encoding': 'gzip',
+132 verbose headers   'cache-control': 'max-age=300',
+132 verbose headers   'content-length': '7956',
+132 verbose headers   'accept-ranges': 'bytes',
+132 verbose headers   date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   age: '128',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-ord1740-ORD',
+132 verbose headers   'x-cache': 'HIT',
+132 verbose headers   'x-cache-hits': '3',
+132 verbose headers   'x-timer': 'S1473793234.144427,VS0,VE0',
+132 verbose headers   vary: 'Accept-Encoding' }
+133 silly get cb [ 200,
+133 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+133 silly get     etag: '"EXSGC9XN4BY9ZERJQY6818XUF"',
+133 silly get     'content-type': 'application/json',
+133 silly get     'content-encoding': 'gzip',
+133 silly get     'cache-control': 'max-age=300',
+133 silly get     'content-length': '7956',
+133 silly get     'accept-ranges': 'bytes',
+133 silly get     date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     age: '128',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-ord1740-ORD',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '3',
+133 silly get     'x-timer': 'S1473793234.144427,VS0,VE0',
+133 silly get     vary: 'Accept-Encoding' } ]
+134 verbose get saving underscore to /root/.npm/registry.npmjs.org/underscore/.cache.json
+135 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+136 http 200 https://registry.npmjs.org/nan
+137 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+137 verbose headers   etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
+137 verbose headers   'content-type': 'application/json',
+137 verbose headers   'content-encoding': 'gzip',
+137 verbose headers   'cache-control': 'max-age=300',
+137 verbose headers   'content-length': '17140',
+137 verbose headers   'accept-ranges': 'bytes',
+137 verbose headers   date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+137 verbose headers   via: '1.1 varnish',
+137 verbose headers   age: '108',
+137 verbose headers   connection: 'keep-alive',
+137 verbose headers   'x-served-by': 'cache-ord1744-ORD',
+137 verbose headers   'x-cache': 'HIT',
+137 verbose headers   'x-cache-hits': '4',
+137 verbose headers   'x-timer': 'S1473793234.364408,VS0,VE0',
+137 verbose headers   vary: 'Accept-Encoding' }
+138 silly get cb [ 200,
+138 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+138 silly get     etag: '"1OOZJAUMBQC59OINHZGMRRCSL"',
+138 silly get     'content-type': 'application/json',
+138 silly get     'content-encoding': 'gzip',
+138 silly get     'cache-control': 'max-age=300',
+138 silly get     'content-length': '17140',
+138 silly get     'accept-ranges': 'bytes',
+138 silly get     date: 'Tue, 13 Sep 2016 19:00:34 GMT',
+138 silly get     via: '1.1 varnish',
+138 silly get     age: '108',
+138 silly get     connection: 'keep-alive',
+138 silly get     'x-served-by': 'cache-ord1744-ORD',
+138 silly get     'x-cache': 'HIT',
+138 silly get     'x-cache-hits': '4',
+138 silly get     'x-timer': 'S1473793234.364408,VS0,VE0',
+138 silly get     vary: 'Accept-Encoding' } ]
+139 verbose get saving nan to /root/.npm/registry.npmjs.org/nan/.cache.json
+140 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+141 silly resolveWithNewModule repl@0.1.3 checking installable status
+142 silly cache add args [ 'repl@0.1.3', null ]
+143 verbose cache add spec repl@0.1.3
+144 silly cache add parsed spec { raw: 'repl@0.1.3',
+144 silly cache add   scope: null,
+144 silly cache add   name: 'repl',
+144 silly cache add   rawSpec: '0.1.3',
+144 silly cache add   spec: '0.1.3',
+144 silly cache add   type: 'version' }
+145 silly addNamed repl@0.1.3
+146 verbose addNamed "0.1.3" is a plain semver version for repl
+147 silly mapToRegistry name repl
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry https://registry.npmjs.org/
+150 silly mapToRegistry uri https://registry.npmjs.org/repl
+151 verbose addNameVersion registry:https://registry.npmjs.org/repl not in flight; fetching
+152 silly resolveWithNewModule bindings@1.2.1 checking installable status
+153 silly cache add args [ 'bindings@1.2.1', null ]
+154 verbose cache add spec bindings@1.2.1
+155 silly cache add parsed spec { raw: 'bindings@1.2.1',
+155 silly cache add   scope: null,
+155 silly cache add   name: 'bindings',
+155 silly cache add   rawSpec: '1.2.1',
+155 silly cache add   spec: '1.2.1',
+155 silly cache add   type: 'version' }
+156 silly addNamed bindings@1.2.1
+157 verbose addNamed "1.2.1" is a plain semver version for bindings
+158 silly mapToRegistry name bindings
+159 silly mapToRegistry using default registry
+160 silly mapToRegistry registry https://registry.npmjs.org/
+161 silly mapToRegistry uri https://registry.npmjs.org/bindings
+162 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+163 silly resolveWithNewModule coffee-script@1.9.1 checking installable status
+164 silly cache add args [ 'coffee-script@1.9.1', null ]
+165 verbose cache add spec coffee-script@1.9.1
+166 silly cache add parsed spec { raw: 'coffee-script@1.9.1',
+166 silly cache add   scope: null,
+166 silly cache add   name: 'coffee-script',
+166 silly cache add   rawSpec: '1.9.1',
+166 silly cache add   spec: '1.9.1',
+166 silly cache add   type: 'version' }
+167 silly addNamed coffee-script@1.9.1
+168 verbose addNamed "1.9.1" is a plain semver version for coffee-script
+169 silly mapToRegistry name coffee-script
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry https://registry.npmjs.org/
+172 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+173 verbose addNameVersion registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+174 silly resolveWithNewModule underscore@1.8.2 checking installable status
+175 silly cache add args [ 'underscore@1.8.2', null ]
+176 verbose cache add spec underscore@1.8.2
+177 silly cache add parsed spec { raw: 'underscore@1.8.2',
+177 silly cache add   scope: null,
+177 silly cache add   name: 'underscore',
+177 silly cache add   rawSpec: '1.8.2',
+177 silly cache add   spec: '1.8.2',
+177 silly cache add   type: 'version' }
+178 silly addNamed underscore@1.8.2
+179 verbose addNamed "1.8.2" is a plain semver version for underscore
+180 silly mapToRegistry name underscore
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry uri https://registry.npmjs.org/underscore
+184 verbose addNameVersion registry:https://registry.npmjs.org/underscore not in flight; fetching
+185 verbose get https://registry.npmjs.org/repl not expired, no request
+186 silly mapToRegistry name repl
+187 silly mapToRegistry using default registry
+188 silly mapToRegistry registry https://registry.npmjs.org/
+189 silly mapToRegistry uri https://registry.npmjs.org/repl
+190 verbose addRemoteTarball https://registry.npmjs.org/repl/-/repl-0.1.3.tgz not in flight; adding
+191 verbose addRemoteTarball [ 'https://registry.npmjs.org/repl/-/repl-0.1.3.tgz',
+191 verbose addRemoteTarball   '2f05d42b0c88b43d05ccbda10ed14aeff5699b60' ]
+192 verbose get https://registry.npmjs.org/bindings not expired, no request
+193 verbose get https://registry.npmjs.org/coffee-script not expired, no request
+194 silly mapToRegistry name bindings
+195 silly mapToRegistry using default registry
+196 silly mapToRegistry registry https://registry.npmjs.org/
+197 silly mapToRegistry uri https://registry.npmjs.org/bindings
+198 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+199 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+199 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+200 silly resolveWithNewModule nan@2.3.5 checking installable status
+201 silly cache add args [ 'nan@~2.3.5', null ]
+202 verbose cache add spec nan@~2.3.5
+203 silly cache add parsed spec { raw: 'nan@~2.3.5',
+203 silly cache add   scope: null,
+203 silly cache add   name: 'nan',
+203 silly cache add   rawSpec: '~2.3.5',
+203 silly cache add   spec: '>=2.3.5 <2.4.0',
+203 silly cache add   type: 'range' }
+204 silly addNamed nan@>=2.3.5 <2.4.0
+205 verbose addNamed ">=2.3.5 <2.4.0" is a valid semver range for nan
+206 silly addNameRange { name: 'nan', range: '>=2.3.5 <2.4.0', hasData: false }
+207 silly mapToRegistry name nan
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/nan
+211 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+212 verbose get https://registry.npmjs.org/underscore not expired, no request
+213 silly mapToRegistry name coffee-script
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+217 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz not in flight; adding
+218 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz',
+218 verbose addRemoteTarball   'c458d02200f460d064a79cb6ab1ee6e2c9ca1c31' ]
+219 silly mapToRegistry name underscore
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry uri https://registry.npmjs.org/underscore
+223 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz not in flight; adding
+224 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz',
+224 verbose addRemoteTarball   '64df2eb590899de950782f3735190ba42ebf311d' ]
+225 info retry fetch attempt 1 at 7:00:35 PM
+226 info attempt registry request try #1 at 7:00:36 PM
+227 http fetch GET https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+228 info retry fetch attempt 1 at 7:00:36 PM
+229 info attempt registry request try #1 at 7:00:36 PM
+230 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+231 info retry fetch attempt 1 at 7:00:36 PM
+232 info attempt registry request try #1 at 7:00:36 PM
+233 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+234 info retry fetch attempt 1 at 7:00:36 PM
+235 info attempt registry request try #1 at 7:00:36 PM
+236 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+237 verbose get https://registry.npmjs.org/nan not expired, no request
+238 silly addNameRange number 2 { name: 'nan', range: '>=2.3.5 <2.4.0', hasData: true }
+239 silly addNameRange versions [ 'nan',
+239 silly addNameRange   [ '0.3.0-wip',
+239 silly addNameRange     '0.3.0-wip2',
+239 silly addNameRange     '0.3.0',
+239 silly addNameRange     '0.3.1',
+239 silly addNameRange     '0.3.2',
+239 silly addNameRange     '0.4.0',
+239 silly addNameRange     '0.4.1',
+239 silly addNameRange     '0.4.2',
+239 silly addNameRange     '0.4.3',
+239 silly addNameRange     '0.4.4',
+239 silly addNameRange     '0.5.0',
+239 silly addNameRange     '0.5.1',
+239 silly addNameRange     '0.5.2',
+239 silly addNameRange     '0.6.0',
+239 silly addNameRange     '0.7.0',
+239 silly addNameRange     '0.7.1',
+239 silly addNameRange     '0.8.0',
+239 silly addNameRange     '1.0.0',
+239 silly addNameRange     '1.1.0',
+239 silly addNameRange     '1.1.1',
+239 silly addNameRange     '1.1.2',
+239 silly addNameRange     '1.2.0',
+239 silly addNameRange     '1.3.0',
+239 silly addNameRange     '1.4.0',
+239 silly addNameRange     '1.4.1',
+239 silly addNameRange     '1.5.0',
+239 silly addNameRange     '1.4.2',
+239 silly addNameRange     '1.4.3',
+239 silly addNameRange     '1.5.1',
+239 silly addNameRange     '1.5.2',
+239 silly addNameRange     '1.6.0',
+239 silly addNameRange     '1.5.3',
+239 silly addNameRange     '1.6.1',
+239 silly addNameRange     '1.6.2',
+239 silly addNameRange     '1.7.0',
+239 silly addNameRange     '1.8.0',
+239 silly addNameRange     '1.8.1',
+239 silly addNameRange     '1.8.2',
+239 silly addNameRange     '1.8.3',
+239 silly addNameRange     '1.8.4',
+239 silly addNameRange     '1.9.0',
+239 silly addNameRange     '2.0.0',
+239 silly addNameRange     '2.0.1',
+239 silly addNameRange     '2.0.2',
+239 silly addNameRange     '2.0.3',
+239 silly addNameRange     '2.0.4',
+239 silly addNameRange     '2.0.5',
+239 silly addNameRange     '2.0.6',
+239 silly addNameRange     '2.0.7',
+239 silly addNameRange     '2.0.8',
+239 silly addNameRange     '2.0.9',
+239 silly addNameRange     '2.1.0',
+239 silly addNameRange     '2.2.0',
+239 silly addNameRange     '2.2.1',
+239 silly addNameRange     '2.3.0',
+239 silly addNameRange     '2.3.1',
+239 silly addNameRange     '2.3.2',
+239 silly addNameRange     '2.3.3',
+239 silly addNameRange     '2.3.4',
+239 silly addNameRange     '2.3.5',
+239 silly addNameRange     '2.4.0' ] ]
+240 silly addNamed nan@2.3.5
+241 verbose addNamed "2.3.5" is a plain semver version for nan
+242 silly mapToRegistry name nan
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry uri https://registry.npmjs.org/nan
+246 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.3.5.tgz not in flight; adding
+247 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz',
+247 verbose addRemoteTarball   '822a0dc266290ce4cd3a12282ca3e7e364668a08' ]
+248 http fetch 200 https://registry.npmjs.org/repl/-/repl-0.1.3.tgz
+249 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+250 info retry fetch attempt 1 at 7:00:36 PM
+251 info attempt registry request try #1 at 7:00:36 PM
+252 http fetch GET https://registry.npmjs.org/nan/-/nan-2.3.5.tgz
+253 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz
+254 silly fetchAndShaCheck shasum 2f05d42b0c88b43d05ccbda10ed14aeff5699b60
+255 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.8.2.tgz
+256 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/repl/-/repl-0.1.3.tgz not in flight; adding
+257 verbose addTmpTarball already have metadata; skipping unpack for repl@0.1.3
+258 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+259 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+260 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.3.5.tgz
+261 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+262 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+263 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+264 silly cache afterAdd repl@0.1.3
+265 verbose afterAdd /root/.npm/repl/0.1.3/package/package.json not in flight; writing
+266 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+267 verbose afterAdd /root/.npm/repl/0.1.3/package/package.json written
+268 silly cache afterAdd bindings@1.2.1
+269 verbose afterAdd /root/.npm/bindings/1.2.1/package/package.json not in flight; writing
+270 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+271 verbose afterAdd /root/.npm/bindings/1.2.1/package/package.json written
+272 silly fetchAndShaCheck shasum 64df2eb590899de950782f3735190ba42ebf311d
+273 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/underscore/-/underscore-1.8.2.tgz not in flight; adding
+274 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.8.2
+275 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+276 silly cache afterAdd underscore@1.8.2
+277 verbose afterAdd /root/.npm/underscore/1.8.2/package/package.json not in flight; writing
+278 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+279 verbose afterAdd /root/.npm/underscore/1.8.2/package/package.json written
+280 silly fetchAndShaCheck shasum 822a0dc266290ce4cd3a12282ca3e7e364668a08
+281 silly fetchAndShaCheck shasum c458d02200f460d064a79cb6ab1ee6e2c9ca1c31
+282 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/nan/-/nan-2.3.5.tgz not in flight; adding
+283 verbose addTmpTarball already have metadata; skipping unpack for nan@2.3.5
+284 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+285 verbose addTmpTarball /tmp/npm-2207-a0974628/registry.npmjs.org/coffee-script/-/coffee-script-1.9.1.tgz not in flight; adding
+286 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.9.1
+287 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+288 silly cache afterAdd nan@2.3.5
+289 verbose afterAdd /root/.npm/nan/2.3.5/package/package.json not in flight; writing
+290 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+291 verbose afterAdd /root/.npm/nan/2.3.5/package/package.json written
+292 silly cache afterAdd coffee-script@1.9.1
+293 verbose afterAdd /root/.npm/coffee-script/1.9.1/package/package.json not in flight; writing
+294 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+295 verbose afterAdd /root/.npm/coffee-script/1.9.1/package/package.json written
+296 silly loadAllDepsIntoIdealTree Finishing
+297 silly idealTree:prePrune hw03
+297 silly idealTree:prePrune ├── bindings@1.2.1
+297 silly idealTree:prePrune ├── coffee-script@1.9.1
+297 silly idealTree:prePrune ├── i2c@0.2.3
+297 silly idealTree:prePrune ├── nan@2.3.5
+297 silly idealTree:prePrune ├── repl@0.1.3
+297 silly idealTree:prePrune └── underscore@1.8.2
+298 silly loadIdealTree Finishing
+299 silly currentTree hw03
+300 silly idealTree hw03
+300 silly idealTree ├── bindings@1.2.1
+300 silly idealTree ├── coffee-script@1.9.1
+300 silly idealTree ├── i2c@0.2.3
+300 silly idealTree ├── nan@2.3.5
+300 silly idealTree ├── repl@0.1.3
+300 silly idealTree └── underscore@1.8.2
+301 silly generateActionsToTake Starting
+302 silly install generateActionsToTake
+303 silly generateActionsToTake Finishing
+304 silly diffTrees action count 6
+305 silly diffTrees add bindings@1.2.1
+306 silly diffTrees add coffee-script@1.9.1
+307 silly diffTrees add nan@2.3.5
+308 silly diffTrees add repl@0.1.3
+309 silly diffTrees add underscore@1.8.2
+310 silly diffTrees add i2c@0.2.3
+311 silly decomposeActions action count 48
+312 silly decomposeActions fetch bindings@1.2.1
+313 silly decomposeActions extract bindings@1.2.1
+314 silly decomposeActions test bindings@1.2.1
+315 silly decomposeActions preinstall bindings@1.2.1
+316 silly decomposeActions build bindings@1.2.1
+317 silly decomposeActions install bindings@1.2.1
+318 silly decomposeActions postinstall bindings@1.2.1
+319 silly decomposeActions finalize bindings@1.2.1
+320 silly decomposeActions fetch coffee-script@1.9.1
+321 silly decomposeActions extract coffee-script@1.9.1
+322 silly decomposeActions test coffee-script@1.9.1
+323 silly decomposeActions preinstall coffee-script@1.9.1
+324 silly decomposeActions build coffee-script@1.9.1
+325 silly decomposeActions install coffee-script@1.9.1
+326 silly decomposeActions postinstall coffee-script@1.9.1
+327 silly decomposeActions finalize coffee-script@1.9.1
+328 silly decomposeActions fetch nan@2.3.5
+329 silly decomposeActions extract nan@2.3.5
+330 silly decomposeActions test nan@2.3.5
+331 silly decomposeActions preinstall nan@2.3.5
+332 silly decomposeActions build nan@2.3.5
+333 silly decomposeActions install nan@2.3.5
+334 silly decomposeActions postinstall nan@2.3.5
+335 silly decomposeActions finalize nan@2.3.5
+336 silly decomposeActions fetch repl@0.1.3
+337 silly decomposeActions extract repl@0.1.3
+338 silly decomposeActions test repl@0.1.3
+339 silly decomposeActions preinstall repl@0.1.3
+340 silly decomposeActions build repl@0.1.3
+341 silly decomposeActions install repl@0.1.3
+342 silly decomposeActions postinstall repl@0.1.3
+343 silly decomposeActions finalize repl@0.1.3
+344 silly decomposeActions fetch underscore@1.8.2
+345 silly decomposeActions extract underscore@1.8.2
+346 silly decomposeActions test underscore@1.8.2
+347 silly decomposeActions preinstall underscore@1.8.2
+348 silly decomposeActions build underscore@1.8.2
+349 silly decomposeActions install underscore@1.8.2
+350 silly decomposeActions postinstall underscore@1.8.2
+351 silly decomposeActions finalize underscore@1.8.2
+352 silly decomposeActions fetch i2c@0.2.3
+353 silly decomposeActions extract i2c@0.2.3
+354 silly decomposeActions test i2c@0.2.3
+355 silly decomposeActions preinstall i2c@0.2.3
+356 silly decomposeActions build i2c@0.2.3
+357 silly decomposeActions install i2c@0.2.3
+358 silly decomposeActions postinstall i2c@0.2.3
+359 silly decomposeActions finalize i2c@0.2.3
+360 silly executeActions Starting
+361 silly install executeActions
+362 silly doSerial global-install 0
+363 silly doParallel fetch 6
+364 verbose correctMkdir /root/.npm/_locks correctMkdir not in flight; initializing
+365 verbose lock using /root/.npm/_locks/staging-26e3588731392528.lock for /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging
+366 silly doParallel extract 6
+367 silly extract bindings@1.2.1
+368 silly extract coffee-script@1.9.1
+369 silly extract nan@2.3.5
+370 silly extract repl@0.1.3
+371 silly extract underscore@1.8.2
+372 silly extract i2c@0.2.3
+373 verbose unbuild node_modules/.staging/bindings-1734f407
+374 verbose unbuild node_modules/.staging/nan-3f61393e
+375 verbose unbuild node_modules/.staging/repl-9c7993d2
+376 verbose unbuild node_modules/.staging/underscore-e68c6928
+377 verbose unbuild node_modules/.staging/i2c-f8a2d190
+378 verbose unbuild node_modules/.staging/coffee-script-a6488ff3
+379 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407 is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+380 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407
+381 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+382 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e
+383 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2 is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+384 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2
+385 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928 is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+386 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928
+387 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190 is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+388 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190
+389 verbose tar unpack /root/.npm/bindings/1.2.1/package.tgz
+390 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407
+391 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407 is being purged
+392 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407
+393 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3 is being purged from base /home/debian/Projects/EmbeddedLinux/hw03
+394 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3
+395 verbose tar unpack /root/.npm/nan/2.3.5/package.tgz
+396 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e
+397 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e is being purged
+398 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e
+399 verbose tar unpack /root/.npm/repl/0.1.3/package.tgz
+400 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2
+401 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2 is being purged
+402 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2
+403 verbose tar unpack /root/.npm/underscore/1.8.2/package.tgz
+404 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928
+405 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928 is being purged
+406 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928
+407 verbose tar unpack /root/.npm/i2c/0.2.3/package.tgz
+408 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190
+409 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190 is being purged
+410 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190
+411 silly gunzTarPerm modes [ '755', '644' ]
+412 verbose tar unpack /root/.npm/coffee-script/1.9.1/package.tgz
+413 verbose tar unpacking to /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3
+414 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3 is being purged
+415 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3
+416 silly gunzTarPerm modes [ '755', '644' ]
+417 silly gunzTarPerm modes [ '755', '644' ]
+418 silly gunzTarPerm modes [ '755', '644' ]
+419 silly gunzTarPerm modes [ '755', '644' ]
+420 silly gunzTarPerm modes [ '755', '644' ]
+421 silly gunzTarPerm extractEntry package.json
+422 silly gunzTarPerm extractEntry package.json
+423 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+424 silly gunzTarPerm extractEntry test.js
+425 silly gunzTarPerm extractEntry package.json
+426 silly gunzTarPerm extractEntry package.json
+427 silly gunzTarPerm extractEntry package.json
+428 silly gunzTarPerm extractEntry README.md
+429 silly gunzTarPerm extractEntry bindings.js
+430 silly gunzTarPerm extractEntry README.md
+431 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+432 silly gunzTarPerm extractEntry include_dirs.js
+433 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+434 silly gunzTarPerm extractEntry README.md
+435 silly gunzTarPerm extractEntry package.json
+436 silly gunzTarPerm extractEntry README.md
+437 silly gunzTarPerm extractEntry LICENSE
+438 silly gunzTarPerm extractEntry .npmignore
+439 silly gunzTarPerm extractEntry README.md
+440 silly gunzTarPerm extractEntry .npmignore
+441 silly gunzTarPerm extractEntry README
+442 silly gunzTarPerm extractEntry LICENSE
+443 silly gunzTarPerm extractEntry main.js
+444 silly gunzTarPerm extractEntry index.js
+445 silly gunzTarPerm extractEntry lib/repl.js
+446 silly gunzTarPerm extractEntry README.md
+447 silly gunzTarPerm extractEntry LICENSE
+448 silly gunzTarPerm extractEntry nan_converters.h
+449 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+450 silly gunzTarPerm extractEntry LICENSE.md
+451 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+452 silly gunzTarPerm extractEntry doc/node_misc.md
+453 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+454 silly gunzTarPerm extractEntry underscore.js
+455 silly gunzTarPerm extractEntry underscore-min.js
+456 silly gunzTarPerm extractEntry underscore-min.map
+457 silly gunzTarPerm extractEntry binding.gyp
+458 silly gunzTarPerm extractEntry examples/accelerometer/accel.coffee
+459 silly gunzTarPerm extractEntry register.js
+460 silly gunzTarPerm extractEntry repl.js
+461 silly gunzTarPerm extractEntry bin/cake
+462 silly gunzTarPerm extractEntry bin/coffee
+463 silly gunzTarPerm extractEntry examples/blinkm/blinkm.coffee
+464 silly gunzTarPerm extractEntry lib/i2c.coffee
+465 silly gunzTarPerm extractEntry src/i2c-dev.c
+466 silly gunzTarPerm extractEntry bower.json
+467 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+468 silly gunzTarPerm extractEntry doc/asyncworker.md
+469 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+470 silly gunzTarPerm extractEntry src/i2c-dev.h
+471 silly gunzTarPerm extractEntry src/i2c.cc
+472 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+473 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+474 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407/node_modules is being purged
+475 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407/node_modules
+476 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2/node_modules is being purged
+477 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2/node_modules
+478 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+479 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+480 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+481 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+482 silly gunzTarPerm extractEntry doc/callback.md
+483 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+484 silly gunzTarPerm extractEntry doc/converters.md
+485 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+486 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+487 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+488 silly gunzTarPerm extractEntry doc/errors.md
+489 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+490 silly gunzTarPerm extractEntry doc/maybe_types.md
+491 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+492 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+493 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+494 silly gunzTarPerm extractEntry doc/methods.md
+495 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+496 silly gunzTarPerm extractEntry doc/new.md
+497 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+498 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+499 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+500 silly gunzTarPerm extractEntry doc/buffers.md
+501 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+502 silly gunzTarPerm extractEntry doc/object_wrappers.md
+503 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+504 silly gunzTarPerm extractEntry doc/persistent.md
+505 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+506 silly gunzTarPerm extractEntry doc/scopes.md
+507 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+508 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+509 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+510 silly gunzTarPerm extractEntry doc/script.md
+511 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+512 silly gunzTarPerm extractEntry doc/string_bytes.md
+513 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+514 silly gunzTarPerm extractEntry doc/v8_internals.md
+515 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+516 silly gunzTarPerm extractEntry doc/v8_misc.md
+517 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+518 silly gunzTarPerm extractEntry nan.h
+519 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+520 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+521 silly gunzTarPerm extractEntry CNAME
+522 silly gunzTarPerm extractEntry nan_callbacks.h
+523 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+524 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+525 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+526 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+527 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+528 silly gunzTarPerm extractEntry CONTRIBUTING.md
+529 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190/node_modules is being purged
+530 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190/node_modules
+531 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+532 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+533 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+534 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+535 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+536 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+537 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+538 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+539 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+540 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+541 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928/node_modules is being purged
+542 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928/node_modules
+543 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+544 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+545 silly gunzTarPerm extractEntry nan_new.h
+546 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+547 silly gunzTarPerm extractEntry nan_object_wrap.h
+548 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+549 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+550 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+551 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+552 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+553 silly gunzTarPerm extractEntry nan_string_bytes.h
+554 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+555 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+556 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+557 silly gunzTarPerm extractEntry nan_weak.h
+558 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+559 silly gunzTarPerm extractEntry CHANGELOG.md
+560 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+561 silly gunzTarPerm extractEntry tools/package.json
+562 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+563 silly gunzTarPerm extractEntry tools/README.md
+564 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+565 silly gunzTarPerm extractEntry tools/1to2.js
+566 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+567 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3/node_modules is being purged
+568 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3/node_modules
+569 silly gentlyRm /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e/node_modules is being purged
+570 verbose gentlyRm don't care about contents; nuking /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e/node_modules
+571 silly doParallel preinstall 6
+572 silly preinstall bindings@1.2.1 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407
+573 info lifecycle bindings@1.2.1~preinstall: bindings@1.2.1
+574 silly preinstall coffee-script@1.9.1 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3
+575 info lifecycle coffee-script@1.9.1~preinstall: coffee-script@1.9.1
+576 silly preinstall nan@2.3.5 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e
+577 info lifecycle nan@2.3.5~preinstall: nan@2.3.5
+578 silly preinstall repl@0.1.3 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2
+579 info lifecycle repl@0.1.3~preinstall: repl@0.1.3
+580 silly preinstall underscore@1.8.2 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928
+581 info lifecycle underscore@1.8.2~preinstall: underscore@1.8.2
+582 silly preinstall i2c@0.2.3 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190
+583 info lifecycle i2c@0.2.3~preinstall: i2c@0.2.3
+584 silly lifecycle bindings@1.2.1~preinstall: no script for preinstall, continuing
+585 silly lifecycle coffee-script@1.9.1~preinstall: no script for preinstall, continuing
+586 silly lifecycle nan@2.3.5~preinstall: no script for preinstall, continuing
+587 silly lifecycle repl@0.1.3~preinstall: no script for preinstall, continuing
+588 silly lifecycle underscore@1.8.2~preinstall: no script for preinstall, continuing
+589 silly lifecycle i2c@0.2.3~preinstall: no script for preinstall, continuing
+590 silly doReverseSerial remove 0
+591 silly doSerial move 0
+592 silly doSerial finalize 6
+593 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/bindings
+594 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/coffee-script
+595 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/nan
+596 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/repl
+597 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/underscore
+598 silly finalize /home/debian/Projects/EmbeddedLinux/hw03/node_modules/i2c
+599 silly doSerial build 6
+600 silly build bindings@1.2.1
+601 info linkStuff bindings@1.2.1
+602 silly linkStuff bindings@1.2.1 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+603 verbose linkBins bindings@1.2.1
+604 verbose linkMans bindings@1.2.1
+605 silly build coffee-script@1.9.1
+606 info linkStuff coffee-script@1.9.1
+607 silly linkStuff coffee-script@1.9.1 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+608 verbose linkBins coffee-script@1.9.1
+609 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+609 verbose link bins   '/home/debian/Projects/EmbeddedLinux/hw03/node_modules/.bin',
+609 verbose link bins   false ]
+610 verbose linkMans coffee-script@1.9.1
+611 silly build nan@2.3.5
+612 info linkStuff nan@2.3.5
+613 silly linkStuff nan@2.3.5 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+614 verbose linkBins nan@2.3.5
+615 verbose linkMans nan@2.3.5
+616 silly build repl@0.1.3
+617 info linkStuff repl@0.1.3
+618 silly linkStuff repl@0.1.3 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+619 verbose linkBins repl@0.1.3
+620 verbose linkMans repl@0.1.3
+621 silly build underscore@1.8.2
+622 info linkStuff underscore@1.8.2
+623 silly linkStuff underscore@1.8.2 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+624 verbose linkBins underscore@1.8.2
+625 verbose linkMans underscore@1.8.2
+626 silly build i2c@0.2.3
+627 info linkStuff i2c@0.2.3
+628 silly linkStuff i2c@0.2.3 has /home/debian/Projects/EmbeddedLinux/hw03/node_modules as its parent node_modules
+629 verbose linkBins i2c@0.2.3
+630 verbose linkMans i2c@0.2.3
+631 silly doSerial global-link 0
+632 silly doParallel update-linked 0
+633 silly doSerial install 6
+634 silly install bindings@1.2.1 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/bindings-1734f407
+635 info lifecycle bindings@1.2.1~install: bindings@1.2.1
+636 silly lifecycle bindings@1.2.1~install: no script for install, continuing
+637 silly install coffee-script@1.9.1 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/coffee-script-a6488ff3
+638 info lifecycle coffee-script@1.9.1~install: coffee-script@1.9.1
+639 silly lifecycle coffee-script@1.9.1~install: no script for install, continuing
+640 silly install nan@2.3.5 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/nan-3f61393e
+641 info lifecycle nan@2.3.5~install: nan@2.3.5
+642 silly lifecycle nan@2.3.5~install: no script for install, continuing
+643 silly install repl@0.1.3 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/repl-9c7993d2
+644 info lifecycle repl@0.1.3~install: repl@0.1.3
+645 silly lifecycle repl@0.1.3~install: no script for install, continuing
+646 silly install underscore@1.8.2 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/underscore-e68c6928
+647 info lifecycle underscore@1.8.2~install: underscore@1.8.2
+648 silly lifecycle underscore@1.8.2~install: no script for install, continuing
+649 silly install i2c@0.2.3 /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging/i2c-f8a2d190
+650 info lifecycle i2c@0.2.3~install: i2c@0.2.3
+651 verbose lifecycle i2c@0.2.3~install: unsafe-perm in lifecycle false
+652 verbose lifecycle i2c@0.2.3~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/debian/Projects/EmbeddedLinux/hw03/node_modules/i2c/node_modules/.bin:/home/debian/Projects/EmbeddedLinux/hw03/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+653 verbose lifecycle i2c@0.2.3~install: CWD: /home/debian/Projects/EmbeddedLinux/hw03/node_modules/i2c
+654 silly lifecycle i2c@0.2.3~install: Args: [ '-c', 'node-gyp rebuild' ]
+655 silly lifecycle i2c@0.2.3~install: Returned: code: 1  signal: null
+656 info lifecycle i2c@0.2.3~install: Failed to exec install script
+657 verbose unlock done using /root/.npm/_locks/staging-26e3588731392528.lock for /home/debian/Projects/EmbeddedLinux/hw03/node_modules/.staging
+658 silly rollbackFailedOptional Starting
+659 silly rollbackFailedOptional Finishing
+660 silly runTopLevelLifecycles Starting
+661 silly runTopLevelLifecycles Finishing
+662 silly install printInstalled
+663 warn enoent ENOENT, open '/home/debian/Projects/EmbeddedLinux/hw03/package.json'
+664 warn hw03 No description
+665 warn hw03 No repository field.
+666 warn hw03 No README data
+667 warn hw03 No license field.
+668 verbose stack Error: i2c@0.2.3 install: `node-gyp rebuild`
+668 verbose stack Exit status 1
+668 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+668 verbose stack     at EventEmitter.emit (events.js:110:17)
+668 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+668 verbose stack     at ChildProcess.emit (events.js:110:17)
+668 verbose stack     at maybeClose (child_process.js:1019:16)
+668 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1091:5)
+669 verbose pkgid i2c@0.2.3
+670 verbose cwd /home/debian/Projects/EmbeddedLinux/hw03
+671 error Linux 4.4.19-ti-r41
+672 error argv "node" "/usr/local/bin/npm" "install" "i2c"
+673 error node v0.12.15
+674 error npm  v3.8.2
+675 error code ELIFECYCLE
+676 error i2c@0.2.3 install: `node-gyp rebuild`
+676 error Exit status 1
+677 error Failed at the i2c@0.2.3 install script 'node-gyp rebuild'.
+677 error Make sure you have the latest version of node.js and npm installed.
+677 error If you do, this is most likely a problem with the i2c package,
+677 error not with npm itself.
+677 error Tell the author that this fails on your system:
+677 error     node-gyp rebuild
+677 error You can get information on how to open an issue for this project with:
+677 error     npm bugs i2c
+677 error Or if that isn't available, you can get their info via:
+677 error     npm owner ls i2c
+677 error There is likely additional logging output above.
+678 verbose exit [ 1, true ]
