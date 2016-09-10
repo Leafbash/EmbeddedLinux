@@ -8,24 +8,21 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include </lib/GPIOoo.h>
-#include </lib/GPIOpin.h>
+#include "GPIO.h"
+#include<iostream>
 
 using namespace exploringBB;
 using namespace std;
 
-#define SYSFS_GPIO_DIR "/sys/class/gpio"
 #define MAX_BUF 64
 
 WINDOW *create_newwin(int height, int width, int starty, int startx);
 void destroy_win(WINDOW *local_win);
 void set_gpio(void);
 void enable_outputs(void);
+void initGpio(void);
 
-    GPIOoo *gp;
-    GPIOpin *blockButton;
-
-int main(int argc, char *argv[]){
+int main(){
     WINDOW *my_win;
     initscr();
     int y=0;
@@ -35,12 +32,15 @@ int main(int argc, char *argv[]){
     noecho();
     int maxx=0, maxy=0;
     GPIO UPBTN(49),DOWNBTN(48),RIGHTBTN(60);
-    initGpio();
+    
+    UPBTN.setDirection(INPUT);
+    DOWNBTN.setDirection(INPUT);
+    RIGHTBTN.setDirection(INPUT);
     printf ("Enter the desired window width please:");
     scanf ("%d", &width);
     printf ("Now enter the desired window height: ");
     scanf ("%d", &height);
-    printf ("Now enter the desired input method:/n0: keyboard /n1: buttons ");
+    printf ("Now enter the desired input method:\n0: keyboard \n1: buttons ");
     scanf ("%d", &input_method);
     my_win = create_newwin(height, width, 0, 0);
     getmaxyx(my_win,maxx,maxy);
@@ -95,19 +95,27 @@ else
     while(1)
     {
         if(!UPBTN.getValue())
-        {
-            y--;
-            mvaddch(y, x, str);            
+            if(y>0)
+            {
+                y--;
+                mvaddch(y, x, str);
+            }            
         }
         else if(!DOWNBTN.getValue())
         {
-            y++;
-            mvaddch(y, x, str);            
+            if(y<maxy)
+            {
+                y++;
+                mvaddch(y, x, str);  
+            }          
         }
         else if(!RIGHTBTN.getValue())
         {
-            x++;
-            mvaddch(y, x, str);
+            if(x<maxx)
+            {
+                x++;
+                mvaddch(y, x, str);
+            }
         }
     refresh();
     }
@@ -120,11 +128,6 @@ else
     return 0;
 }
 
-void initGpio()
-{
-    inGPIO.setDirection(INPUT);
-
-}
 /**
 create_newin creates a window of specified size
 Note: This function was pulled from 
