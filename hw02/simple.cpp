@@ -3,19 +3,10 @@
 * Techniques for Building with Embedded Linux" by John Wiley & Sons, 2014
 * ISBN 9781118935125. Please see the file README.md in the repository root 
 * directory for copyright and GNU GPLv3 license information.            */
-#include <stdio.h>
-#include <unistd.h>
-#include <time.h>
-#include <string.h>
-#include <signal.h>
-#include <sys/time.h>
-#include <ncurses.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include "GPIO.h"
-#include<iostream>
 
+#include<iostream>
+#include<unistd.h> //for usleep
+#include"GPIO.h"
 using namespace exploringBB;
 using namespace std;
 

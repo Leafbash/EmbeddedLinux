@@ -15,12 +15,14 @@ using namespace exploringBB;
 using namespace std;
 
 #define MAX_BUF 64
-
+#
 WINDOW *create_newwin(int height, int width, int starty, int startx);
 void destroy_win(WINDOW *local_win);
 void set_gpio(void);
 void enable_outputs(void);
 void initGpio(void);
+
+GPIO UPBTN(49),DOWNBTN(48),RIGHTBTN(60);
 
 int main(){
     WINDOW *my_win;
@@ -31,8 +33,8 @@ int main(){
     chtype str = 'X';  
     noecho();
     int maxx=0, maxy=0;
-    GPIO UPBTN(49),DOWNBTN(48),RIGHTBTN(60);
-    
+
+
     UPBTN.setDirection(INPUT);
     DOWNBTN.setDirection(INPUT);
     RIGHTBTN.setDirection(INPUT);
@@ -95,11 +97,16 @@ else
     while(1)
     {
         if(!UPBTN.getValue())
+        {
             if(y>0)
             {
                 y--;
                 mvaddch(y, x, str);
-            }            
+            }
+            while(!UPBTN.getValue())
+            {
+
+            }                
         }
         else if(!DOWNBTN.getValue())
         {
@@ -107,7 +114,11 @@ else
             {
                 y++;
                 mvaddch(y, x, str);  
-            }          
+            }
+            while(!DOWNBTN.getValue())
+            {
+
+            }            
         }
         else if(!RIGHTBTN.getValue())
         {
@@ -116,6 +127,10 @@ else
                 x++;
                 mvaddch(y, x, str);
             }
+            while(!RIGHTBTN.getValue())
+            {
+
+            }  
         }
     refresh();
     }
@@ -166,3 +181,7 @@ void destroy_win(WINDOW *local_win)
 	wrefresh(local_win);
 	delwin(local_win);
 }
+/*
+*This function will loop until a button is pressed,
+*and then wait for release before returning the GPIO object being used.
+*/
