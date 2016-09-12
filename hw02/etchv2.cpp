@@ -15,14 +15,14 @@ using namespace exploringBB;
 using namespace std;
 
 #define MAX_BUF 64
-#
+
 WINDOW *create_newwin(int height, int width, int starty, int startx);
 void destroy_win(WINDOW *local_win);
 void set_gpio(void);
 void enable_outputs(void);
 void initGpio(void);
 
-GPIO UPBTN(49),DOWNBTN(48),RIGHTBTN(60);
+GPIO UPBTN(49),DOWNBTN(48),RIGHTBTN(61),LEFTBTN(60); //GPIO objects, these are GPIO numbers(not pin numbers)
 
 int main(){
     WINDOW *my_win;
@@ -30,32 +30,44 @@ int main(){
     int y=0;
     int  x=0;
     int height, width,input_method,down_val,up_val,right_val,left_val;
-    chtype str = 'X';  
-    noecho();
+    chtype str = 'X'; //Character to use for marking the screen  
+    
     int maxx=0, maxy=0;
 
 
     UPBTN.setDirection(INPUT);
     DOWNBTN.setDirection(INPUT);
     RIGHTBTN.setDirection(INPUT);
-    printf ("Enter the desired window width please:");
+    LEFTBTN.setDirection(INPUT);
+    printf ("Enter the desired window width please:\n");
     scanf ("%d", &width);
-    printf ("Now enter the desired window height: ");
+    printf ("Now enter the desired window height:\n");
     scanf ("%d", &height);
     printf ("Now enter the desired input method:\n0: keyboard \n1: buttons ");
-    scanf ("%d", &input_method);
-    my_win = create_newwin(height, width, 0, 0);
-    getmaxyx(my_win,maxx,maxy);
+    noecho();
+    while(1)
+    {
     
-if(!input_method)
+        scanf ("%d", &input_method);
+        if(input_method==0 || input_method==1) //check for valid input
+        {
+            break;
+        }
+        printf ("Invalid input! Try again:\n0: keyboard \n1: buttons ");
+    }
+    
+    my_win = create_newwin(height, width, 0, 0);
+    getmaxyx(my_win,maxx,maxy); //get window size for boundaries
+    
+if(!input_method) //check for the user specified input method
 {
         while(1)
         {
-            int c = getch();
+            int c = getch(); //blocking, waits for keyboard input
             switch (c)
             {
                 case 'w':
-                if(y>0)
+                if(y>0) //check for boundary of window
                 {
                     y--;
                     mvaddch(y, x, str);
@@ -96,14 +108,14 @@ else
 {
     while(1)
     {
-        if(!UPBTN.getValue())
+        if(!UPBTN.getValue()) //check for a button press, active low
         {
             if(y>0)
             {
                 y--;
                 mvaddch(y, x, str);
             }
-            while(!UPBTN.getValue())
+            while(!UPBTN.getValue()) //wait for button release to continue
             {
 
             }                
@@ -128,6 +140,18 @@ else
                 mvaddch(y, x, str);
             }
             while(!RIGHTBTN.getValue())
+            {
+
+            }  
+        }
+        else if(!LEFTBTN.getValue())
+        {
+            if(x>0)
+            {
+                x--;
+                mvaddch(y, x, str);
+            }
+            while(!LEFTBTN.getValue())
             {
 
             }  
@@ -159,7 +183,11 @@ WINDOW *create_newwin(int height, int width, int starty, int startx)
 
 	return local_win;
 }
-
+/**
+destroy_win removes the specified window
+Note: This function was pulled from 
+http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/windows.html
+**/
 void destroy_win(WINDOW *local_win)
 {	
 	/* box(local_win, ' ', ' '); : This won't produce the desired
@@ -181,7 +209,3 @@ void destroy_win(WINDOW *local_win)
 	wrefresh(local_win);
 	delwin(local_win);
 }
-/*
-*This function will loop until a button is pressed,
-*and then wait for release before returning the GPIO object being used.
-*/
