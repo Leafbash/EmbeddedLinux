@@ -8,8 +8,6 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include </lib/GPIOoo.h>
-#include </lib/GPIOpin.h>
 
 #define SYSFS_GPIO_DIR "/sys/class/gpio"
 #define MAX_BUF 64
@@ -19,8 +17,6 @@ void destroy_win(WINDOW *local_win);
 void set_gpio(void);
 void enable_outputs(void);
 
-    GPIOoo *gp;
-    GPIOpin *blockButton;
 
 int main(int argc, char *argv[]){
     WINDOW *my_win;
@@ -29,16 +25,14 @@ int main(int argc, char *argv[]){
     int  x=0;
     int height, width,input_method,down_val,up_val,right_val,left_val;
     chtype str = 'X';  
-    noecho();
     int maxx=0, maxy=0;
 
-    printf ("Enter the desired window width please:");
+    printf ("Enter the desired window width please: \n");
     scanf ("%d", &width);
-    printf ("Now enter the desired window height: ");
+    printf ("Now enter the desired window height: \n");
     scanf ("%d", &height);
-    printf ("Now enter the desired input method:/n0: keyboard /n1: buttons ");
-    scanf ("%d", &input_method);
-    my_win = create_newwin(height, width, 0, 0);
+    noecho();
+my_win = create_newwin(height, width, 0, 0);
     getmaxyx(my_win,maxx,maxy);
     
 
