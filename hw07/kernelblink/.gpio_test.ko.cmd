@@ -1,0 +1,1 @@
+cmd_/home/debian/Projects/EmbeddedLinux/hw07/kernelblink/gpio_test.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/debian/Projects/EmbeddedLinux/hw07/kernelblink/gpio_test.ko /home/debian/Projects/EmbeddedLinux/hw07/kernelblink/gpio_test.o /home/debian/Projects/EmbeddedLinux/hw07/kernelblink/gpio_test.mod.o
