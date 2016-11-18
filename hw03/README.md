@@ -24,3 +24,9 @@
     tmp address will be either 0x48 or 0x40 depending on the state of ADD0.
     Enter each parameter as a hexvalue (0x notation)
     2. To read the temperature and wait for an alert run "tempReadConverBash"
+
+
+==========
+Comments by Prof. Yoder
+
+Grade:  7/10
