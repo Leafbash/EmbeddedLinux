@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* PRU C/C++ Codegen                                              Unix v2.1.2 *
-;* Date/Time created: Wed Oct 26 00:55:03 2016                                *
+;* Date/Time created: Wed Oct 26 02:38:48 2016                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --endian=little --hll_source=on --object_format=elf --silicon_version=3 --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -66,8 +66,8 @@ $C$DW$7	.dwtag  DW_TAG_variable, DW_AT_name("pru_remoteproc_ResourceTable")
 	.dwattr $C$DW$7, DW_AT_decl_file("resource_table_pru1.h")
 	.dwattr $C$DW$7, DW_AT_decl_line(0x40)
 	.dwattr $C$DW$7, DW_AT_decl_column(0x1a)
-;	optpru /tmp/02403aGkotT /tmp/024038MWQNC 
-;	acpiapru -@/tmp/02403uq0Fqb 
+;	optpru /tmp/02180oFW9Tg /tmp/021806DGepn 
+;	acpiapru -@/tmp/02180qWH4cK 
 	.sect	".text:main"
 	.clink
 	.global	||main||
@@ -124,12 +124,7 @@ $C$DW$8	.dwtag  DW_TAG_subprogram, DW_AT_name("main")
 	.dwpsn	file "main_pru0.c",line 60,column 3,is_stmt,isa 0
 ;----------------------------------------------------------------------
 ;  60 | __R30 = (__R31&(1<<3))<<2;                                             
-;----------------------------------------------------------------------
-        AND       r1, r31, 0x08         ; [ALU_PRU] |60| 
-        LSL       r30, r1, 0x02         ; [ALU_PRU] |60| 
-	.dwpsn	file "main_pru0.c",line 61,column 3,is_stmt,isa 0
-;----------------------------------------------------------------------
-;  61 | __delay_cycles(TIME);                                                  
+;  61 | //__delay_cycles(TIME);                                                
 ;  62 | // __R30 &= ~(1<<5);                                                   
 ;  63 | // __delay_cycles(TIME);                                               
 ;  65 | __delay_cycles(TIME);   // Give some time for press to release         
@@ -137,10 +132,8 @@ $C$DW$8	.dwtag  DW_TAG_subprogram, DW_AT_name("main")
 ;  67 | start(TIME);                                                           
 ;  68 | __halt();                                                              
 ;----------------------------------------------------------------------
-        .newblock
-        LDI32    r0, 2499999
-$1:     SUB      r0, r0, 1
-        QBNE     $1, r0, 0             ; [ALU_PRU] |61| 
+        AND       r0, r31, 0x08         ; [ALU_PRU] |60| 
+        LSL       r30, r0, 0x02         ; [ALU_PRU] |60| 
 	.dwpsn	file "main_pru0.c",line 59,column 8,is_stmt,isa 0
         JMP       ||$C$L1||             ; [ALU_PRU] |59| 
 ;* --------------------------------------------------------------------------*
